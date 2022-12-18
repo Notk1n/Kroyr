@@ -1,0 +1,129 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div dos textos */
+.sobre__textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sobre__titulo {
+    font-size: 2rem;
+}
+
+.sobre__desc {
+    font-size: 1rem;
+    color: var(--cinza);
+    padding: 0 1rem;
+}
+
+/* Devices Section */
+
+.devices__titulo {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* UL */
+.devices__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+    padding-top: 1em;
+    padding-left: 0;
+}
+
+.devices__icons{
+    font-size: 2em;
+    color: var(--verde);
+    border-top: 4px solid var(--cinza-200);
+    border-bottom: 4px solid var(--cinza-200);
+    padding: .2em;
+}
+
+/* Textos embaixo dos icones */
+.devices__desc {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 1rem;
+        padding: 1rem 3rem;
+    }
+
+    .sobre__desc {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .devices__lista {
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre__textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre__titulo {
+        font-size: 2.5em;
+    }
+
+    .sobre__desc {
+        width: 50%;
+        font-size: 1.4em;
+        color: var(--cinza);
+        text-align: center;
+    }
+
+    .devices__titulo {
+        font-size: 2em;
+        padding-top: 2em;
+    }
+
+    .devices__lista {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 3em;
+        padding-top: 1em;
+    }
+
+    .devices__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .devices__icons{
+        font-size: 3em;
+        color: var(--verde);
+        border-top: 4px solid var(--cinza-200);
+        border-bottom: 4px solid var(--cinza-200);
+        padding: .2em;
+    }
+    
+    .devices__desc {
+        font-size: 1.2em;
+        font-weight: 500;
+        display: block;
+    }
+}

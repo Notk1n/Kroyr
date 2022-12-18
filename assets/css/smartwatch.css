@@ -1,0 +1,137 @@
+/* titulo */
+.swatch__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* paragrafo */
+.swatch__desc {
+    font-size: 1rem;
+    color: var(--cinza);
+    padding: 0 1rem;
+}
+
+.swatch__svg {
+    display: none;
+}
+
+/* Download Section */
+
+.download {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.download__titulo {
+    font-size: 2rem;
+}
+
+.download__desc {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cinza);
+    padding-bottom: 1rem;
+}
+
+.download__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--cinza-400);
+    border: 3px solid var(--branco);
+    padding: .2rem .5rem;
+    transition: .3s; 
+}
+
+/* .download__link:hover {
+    border: 3px solid var(--branco);
+    border-radius: 1em;
+    padding: .2em .5em;
+    background-color: var(--p0);
+    font-weight: 700;
+    color: var(--verde);
+}  DESKTOP*/
+
+@media screen and (min-width: 768px) {
+    .swatch__titulo {
+        text-align: start;
+        padding: 1rem 3rem;
+    }
+
+    .swatch__desc {
+        padding: 0 0 2rem 3rem;
+        font-size: 1.2rem;
+    }
+
+    .download__desc {
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swatch {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* div dos textos */
+    .swatch__textos {
+        max-width: 40%;
+    }
+
+    /* titulo */
+    .swatch__titulo {
+        font-size: 2.5em;
+    }
+
+    /* paragrafo */
+    .swatch__desc {
+        font-size: 1.4em;
+        color: var(--cinza);
+    }
+
+    /* ilustração */
+    .swatch__svg {
+        width: 35%;
+        display: block;
+    }
+
+    .download {
+        text-align: center;
+        padding-bottom: 5em;
+    }
+    
+    .download__titulo {
+        font-size: 2.5em;
+    }
+    
+    .download__desc {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: var(--cinza);
+    }
+    
+    .download__link {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--branco);
+        background-color: var(--cinza-400);
+        border: 3px solid var(--branco);
+        padding: .2em .5em;
+        transition: .3s; 
+    }
+    
+    .download__link:hover {
+        border: 3px solid var(--branco);
+        border-radius: 1em;
+        padding: .2em .5em;
+        background-color: var(--p0);
+        font-weight: 700;
+        color: var(--verde);
+    }
+}

@@ -1,0 +1,109 @@
+/* CONTAINER EM VOLTA DO TITULO */
+.titulo__container {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.main__titulo {
+    font-size: 2em;
+    font-weight: 500;
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+/* titulo efeito */
+.main__titulo::before, .main__titulo::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+/* titulo efeito */
+.titulo__efeito {
+    box-shadow: 7px 7px 0px var(--verde);
+    top: -2px;
+    left: -2px;
+}
+
+/* titulo efeito */
+.titulo__efeito:hover {
+    box-shadow: 0px 0px ;
+}
+
+/* DESCRIÇÃO */
+.main__desc {
+    font-size: 1rem;
+    color: var(--cinza);
+    padding: 0 1rem;
+}
+
+.main__svg {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .titulo__container {
+        text-align: start;
+        padding: 1rem 3rem;
+    }
+
+    .main__desc {
+        padding: 0 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    /* div dos textos */
+    .main__textos {
+        width: 40%;
+    }
+    
+    /* titulo */
+    .main__titulo {
+        font-size: 2.5em;
+        font-weight: 500;
+        position: relative;
+        border: none;
+        transition: .4s ease-in;
+        z-index: 1;
+    }
+    
+    /* titulo efeito */
+    .main__titulo::before, .main__titulo::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .titulo__efeito {
+        box-shadow: 10px 10px 0px var(--verde);
+        top: -5px;
+        left: -5px;
+    }
+    
+    .titulo__efeito:hover {
+        box-shadow: 0px 0px ;
+    }
+    
+    /* paragrafo */
+    .main__desc {
+        font-size: 1.4em;
+        color: var(--cinza);
+    }
+    
+    /* ilustração */
+    .main__svg {
+        width: 35%;
+        display: block;
+    }
+}

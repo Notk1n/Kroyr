@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --verde:#00ff6a;
+    --branco: #F9F9F9;
+    --preto: #171717;
+    --p0: #000000;
+    --cinza: #828282;
+    --cinza-200: #333333;
+    --cinza-400: #212121;
+}
+
+*::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--branco);
+    background: var(--preto);
+}
